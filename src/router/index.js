@@ -1,20 +1,33 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
+
+import Amplis from "../views/Amplis.vue";
+import Presets from "../views/Presets.vue";
+import Prealignement from "../views/Prealignement.vue";
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
-  },
-  {
-    path: "/about",
-    name: "About",
+    name: "Amplis",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: Amplis
+  },
+  {
+    path: "/presets",
+    name: "Presets",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Presets
+  },
+  {
+    path: "/prealignement",
+    name: "Prealignement",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Prealignement
   }
 ];
 

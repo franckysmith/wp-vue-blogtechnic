@@ -1,22 +1,36 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Amplis</router-link> |
+    <router-link to="/presets">Presets</router-link> |
+    <router-link to="/prealignement">Pré-alignement</router-link>
   </div>
   <router-view />
 </template>
 
 <style>
+:root {
+  --color1: #4dcc59;
+  --color2: #f3e309;
+  --color3: #eb910a;
+  --colorLA: #bd9f59;
+}
+* {
+  /* padding: 0; */
+  /* margin: 0; */
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #221d20;
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
 }
 
 #nav a {
@@ -25,6 +39,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #66dd9a;
 }
 </style>
